@@ -63,3 +63,16 @@ $dbtype='mysql';
 
 ![Login Page](https://raw.githubusercontent.com/Kaguai10/Instalasi_PHPMYADMIN/refs/heads/main/login_page_phpmyadmin.png "Login Page")
 ![Login Page](https://raw.githubusercontent.com/Kaguai10/Instalasi_PHPMYADMIN/refs/heads/main/index_page.png "Login Page")
+
+Atau kalian dapat masuk sebagai user <b>root</b> dengan menggunakan terminal atau CLI dengan mengetik ini
+
+```bash
+mysql -u root -p
+```
+
+Setelah login ke database sql menggunakan terminal kalian dapat memasukan password root lalu ketik command sql berikut ini:
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+FLUSH PRIVILEGES;
+```
+Ganti password sesuai password root kalian. Lalu coba login kembali ke PHPMYADMIN dan masuk sebagai user dan password root dengan benar.
